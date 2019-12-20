@@ -24,8 +24,7 @@ const orderSchema = new Schema({
 		// set: getDate
 	},
 	description: {
-		type: String,
-		required: false,
+		type: String,		
 	},
 }, {
 	timestamps: true,
