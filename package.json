@@ -1,5 +1,5 @@
 {
-"homepage": "https://github.com/tuanrobo/quanvan-billing-backend",
+"homepage": "tuanrobo.github.io",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
@@ -9,6 +9,10 @@
 	"build": "express build --output public",
 	"start": "nodemon"
   },
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/tuanrobo/quanvan-billing-backend"
+},
   "author": "tuanrobo",
   "license": "ISC",
   "dependencies": {
