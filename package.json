@@ -1,18 +1,21 @@
 {
-"homepage": "tuanrobo.github.io",
+  "homepage": "tuanrobo.github.io",
   "name": "backend",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-	"test": "echo \"Error: no test specified\" && exit 1",
-	"build": "express build --output public",
-	"start": "nodemon"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "build --output public",
+    "start": "nodemon"
+  },
+  "engines": {
+    "node": "10.x"
   },
   "repository": {
-	"type": "git",
-	"url": "https://github.com/tuanrobo/quanvan-billing-backend"
-},
+    "type": "git",
+    "url": "https://github.com/tuanrobo/quanvan-billing-backend"
+  },
   "author": "tuanrobo",
   "license": "ISC",
   "dependencies": {
@@ -22,7 +25,6 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
-    "flash": "^1.1.0",
     "mongoose": "^5.7.7"
   }
 }

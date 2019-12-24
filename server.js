@@ -37,7 +37,6 @@ app.use('/orders', orderRouter);
 app.use('/products', productRouter);
 app.use('/customers', customersRouter);
 app.use('/inventories', inventoryRouter);
-
 app.listen(port, () => {	
 	console.log(`Server is running on port: ${port}`)
 });
