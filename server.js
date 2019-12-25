@@ -20,12 +20,6 @@ mongoose.connect(uri,{
 	useNewUrlParser: true, 
 	useCreateIndex: true,
 	useUnifiedTopology: true,
-	server: {
-		sslValidate:true	  
-	  , sslKey:key
-	  , sslCert:cert
-	  , sslPass:'10gen'
-	}
 });
 
 const connection = mongoose.connection;
