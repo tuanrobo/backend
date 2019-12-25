@@ -1,6 +1,9 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose =  require('mongoose');
+f = require('util').format,
+fs = require('fs');
+
 
 require('dotenv').config();
 
@@ -16,7 +19,14 @@ const uri = process.env.DATABASE_URL;
 mongoose.connect(uri,{ 
 	useNewUrlParser: true, 
 	useCreateIndex: true,
-	useUnifiedTopology: true
+	useUnifiedTopology: true,
+	server: {
+		sslValidate:true
+	  , sslCA:ca
+	  , sslKey:key
+	  , sslCert:cert
+	  , sslPass:'10gen'
+	}
 });
 
 const connection = mongoose.connection;
