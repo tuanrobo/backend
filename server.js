@@ -21,8 +21,7 @@ mongoose.connect(uri,{
 	useCreateIndex: true,
 	useUnifiedTopology: true,
 	server: {
-		sslValidate:true
-	  , sslCA:ca
+		sslValidate:true	  
 	  , sslKey:key
 	  , sslCert:cert
 	  , sslPass:'10gen'
