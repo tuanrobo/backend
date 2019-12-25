@@ -20,6 +20,12 @@ mongoose.connect(uri,{
 	useNewUrlParser: true, 
 	useCreateIndex: true,
 	useUnifiedTopology: true,
+}, (err,res)=> {
+	if (err) {
+		console.log ('ERROR connecting to: ' + uri + '. ' + err);
+		} else {
+		console.log ('Succeeded connected to: ' + uri);
+		}
 });
 
 const connection = mongoose.connection;
