@@ -15,7 +15,7 @@ app.use(express.json());
 
 //CONNECT DATABASE
 
-const uri = process.env.DATABASE_URL;
+const uri = process.env.MONGODB_URL;
 mongoose.connect(uri,{ 
 	useNewUrlParser: true, 
 	useCreateIndex: true,
